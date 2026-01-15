@@ -59,11 +59,11 @@ export default function CompetitionsSection() {
               />
     <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_5%,white)] dark:bg-black"></div>
         
-       <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl 
+       <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl 
                text-white/90 tracking-[0.3em] sm:tracking-[0.4em] lg:tracking-[0.5em]
                font-thin text-center uppercase">
         competitions
-      </h1>
+      </h2>
         <div className="w-24 sm:w-32 h-px bg-gradient-to-r from-transparent via-white/50 to-transparent mx-auto mt-4 mb-12"></div>
 
 

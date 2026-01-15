@@ -92,9 +92,9 @@ export default function CountdownTimer() {
 
       {/* Header */}
       <div className="relative z-10 mb-8 sm:mb-12 md:mb-16">
-        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl text-white/90 font-thin uppercase text-center tracking-[0.3em] sm:tracking-[0.4em] lg:tracking-[0.5em]">
+        <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl text-white/90 font-thin uppercase text-center tracking-[0.3em] sm:tracking-[0.4em] lg:tracking-[0.5em]">
          Days till revolution
-        </h1>
+        </h2>
         <div className="w-32 h-px bg-gradient-to-r from-transparent via-white/50 to-transparent mx-auto mt-4"></div>
       </div>
 
