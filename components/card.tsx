@@ -7,11 +7,7 @@ import { cn } from "@/lib/utils";
 import { PixelatedCanvas } from "@/components/ui/pixelated-canvas";
 
 export default function HUDCard() {
-  const fullText = `RITS is a student-driven technology community dedicated to fostering innovation, creativity, and technical excellence. We bring together students who are passionate about information technology, problem-solving, and digital transformation, creating a platform to learn, collaborate, and grow.
-
-Through events such as IT Day, workshops, competitions, and hands-on projects, RITS aims to bridge the gap between theoretical knowledge and real-world applications. We encourage critical thinking, teamwork, and continuous learning in a rapidly evolving technological landscape.
-
-Our mission is to empower students with the skills, confidence, and mindset required to thrive in the modern tech world while promoting a culture of professionalism, leadership, and innovation.`;
+  const fullText = `Richmond College ICT Society, widely known as RITS, is a pioneering student body with a strong legacy in technology and innovation. Through its annual ICT Day Kngine, RITS brings together talent and creativity by organizing both intra-school and inter-school competitions, fostering digital skills and inspiring the next generation of tech enthusiasts.`;
 
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
@@ -33,7 +29,7 @@ Our mission is to empower students with the skills, confidence, and mindset requ
   }, [index, fullText, isInView]);
 
   return (
-    <div className="relative p-10 flex h-auto w-full items-center justify-center bg-black dark:bg-black">
+    <section id="about"  className="relative p-10 flex h-auto w-full items-center justify-center bg-black dark:bg-black">
        <div
         className={cn(
           "absolute inset-0",
@@ -107,6 +103,6 @@ Our mission is to empower students with the skills, confidence, and mindset requ
           </div>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 }

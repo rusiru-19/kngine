@@ -16,15 +16,15 @@ export default function Navigationbar() {
   const navItems = [
     {
       name: "competition",
-      link: "#features",
+      link: "/#competition",
     },
     {
       name: "About",
-      link: "#pricing",
+      link: "/#about",
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "/contact",
     },
   ];
 
@@ -67,6 +67,7 @@ export default function Navigationbar() {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
+              
                   <NavbarButton variant="primary">REGISTER</NavbarButton>
 
             </div>

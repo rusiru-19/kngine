@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -30,13 +30,13 @@ export default function Footer() {
           <a href="#about" className="hover:text-gray-400 transition-colors">
             About
           </a>
-          <a href="#competitions" className="hover:text-gray-400 transition-colors">
+          <a href="#competition" className="hover:text-gray-400 transition-colors">
             Competitions
           </a>
           <a href="#speakers" className="hover:text-gray-400 transition-colors">
             Speakers
           </a>
-          <a href="#contact" className="hover:text-gray-400 transition-colors">
+          <a href="/contact" className="hover:text-gray-400 transition-colors">
             Contact
           </a>
         </div>
@@ -44,25 +44,25 @@ export default function Footer() {
         {/* Right - Social Icons */}
         <div className="flex gap-4 justify-center sm:justify-end">
           <a
-            href="#"
+            href="https://github.com/richmond-college-ict"
             className="hover:text-gray-400 transition-colors"
             aria-label="GitHub"
           >
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/richmonditsociety/"
             className="hover:text-gray-400 transition-colors"
-            aria-label="LinkedIn"
+            aria-label="Instergram"
           >
-            <Linkedin className="w-5 h-5" />
+            <Instagram className="w-5 h-5" />
           </a>
           <a
-            href="#"
+            href="https://www.facebook.com/RITS.KNGINE"
             className="hover:text-gray-400 transition-colors"
-            aria-label="Twitter"
+            aria-label="facebook"
           >
-            <Twitter className="w-5 h-5" />
+            <Facebook className="w-5 h-5" />
           </a>
         </div>
       </div>

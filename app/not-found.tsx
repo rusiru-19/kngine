@@ -2,11 +2,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import Footer from "@/components/footer";
+import Navigationbar from "@/components/navigation";
 export default function NotFoundPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-black relative overflow-hidden px-4">
-  
+      <Navigationbar />
 
       {/* 404 Number */}
       <motion.h1
@@ -37,12 +38,11 @@ export default function NotFoundPage() {
       >
         <Link
           href="/"
-          className="px-6 py-3 border border-cyan-400 text-cyan-400 font-mono tracking-widest hover:bg-cyan-400/10 transition-colors rounded-lg"
+          className="px-6  py-3 border border-cyan-400 mb-10 text-cyan-400 font-mono tracking-widest hover:bg-cyan-400/10 transition-colors rounded-lg"
         >
           Go Home
         </Link>
       </motion.div>
-
     </div>
   );
 }

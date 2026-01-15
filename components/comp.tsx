@@ -5,37 +5,42 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Trophy, Code, Paintbrush, Puzzle } from "lucide-react"; // Example icons
 import { cn } from "@/lib/utils";
-
+import Link from 'next/link'
+import { link } from "fs";
 const competitions = [
   {
     id: 1,
-    title: "Coding Challenge",
-    description: "Test your programming skills in logic and algorithm challenges.",
+    title: "Web Designing",
+    description: "Inrer School Web Designing Compettetion.",
     icon: <Code className="w-10 h-10 text-white" />,
+    link: '/webdev'
   },
   {
     id: 2,
     title: "Graphic Design",
-    description: "Showcase creativity and design skills in digital artwork.",
+    description: "Inrer School Graphic Designing Compettetion.",
     icon: <Paintbrush className="w-10 h-10 text-white" />,
+    link: '/graphicdesign'
   },
   {
     id: 3,
     title: "Quiz Battle",
     description: "Compete with peers in technology and general knowledge quizzes.",
     icon: <Puzzle className="w-10 h-10 text-white" />,
+    link: '/quiz'
   },
   {
     id: 4,
-    title: "Innovation Hunt",
+    title: "Cyber Combat",
     description: "Pitch innovative ideas and solve real-world tech problems.",
     icon: <Trophy className="w-10 h-10 text-white" />,
+    link: '/cybercombat'
   },
 ];
 
 export default function CompetitionsSection() {
   return (
-    <section className="h-180 flex flex-col items-center relative justify-center px-6 py-16 ">
+    <section id="competition" className="h-180 flex flex-col items-center relative justify-center px-6 py-16 ">
     <div
                 className={cn(
                   "absolute inset-0",
@@ -53,6 +58,7 @@ export default function CompetitionsSection() {
 
       <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
         {competitions.map((comp, i) => (
+          <Link href={comp.link} >
           <motion.div
             key={comp.id}
             initial={{ opacity: 0, y: 30 }}
@@ -69,6 +75,7 @@ export default function CompetitionsSection() {
 
       
           </motion.div>
+          </Link>
         ))}
       </div>
     </section>
