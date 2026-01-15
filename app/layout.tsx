@@ -12,10 +12,45 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
-  title: "KNGINE - Legion ",
-  description: "",
+  title: "KNGINE ",
+  description:
+    "KNGINE The annual ICT Day of Richmond college ",
+  keywords: [
+    "Richmond college, kngine, ict society , rits, richmond ict, kngine - legion, richmond live "
+  ],
+  authors: [{ name: "Rusiru Thamara" }],
+  alternates: {
+    canonical: "https://kngine.richmondcollege.lk",
+  },
+  openGraph: {
+    title: "KNGINE ",
+    description:
+      "KNGINE The annual ICT Day of Richmond college ",
+    url: "https://kngine.richmondcollege.lk",
+    siteName: "KNGINE",
+    images: [
+      {
+        url: "https://kngine.richmondcollege.lk/images/imagebg.png",
+        width: 1200,
+        height: 630,
+        alt: "KNGINE ",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KNGINE ",
+    description:
+      "KNGINE The annual ICT Day of Richmond college ",
+    images: ["https://kngine.richmondcollege.lk/images/imagebg.png"],
+  },
+  metadataBase: new URL("https://kngine.richmondcollege.lk"),
 };
+  
 
 export default function RootLayout({
   children,
