@@ -72,7 +72,7 @@ export default function CountdownTimer() {
   };
 
   return (
-    <div className="min-h-190  flex flex-col items-center justify-center p-4 overflow-hidden relative">
+    <div className="min-h-screen   px-4 sm:px-6 py-16 sm:py-20 lg:py-28     flex flex-col items-center justify-center p-4 overflow-hidden relative">
                <div
           className={cn(
             "absolute inset-0",
@@ -92,7 +92,7 @@ export default function CountdownTimer() {
 
       {/* Header */}
       <div className="relative z-10 mb-8 sm:mb-12 md:mb-16">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white/90 tracking-[0.5em] font-thin text-center uppercase">
+        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl text-white/90 font-thin uppercase text-center tracking-[0.3em] sm:tracking-[0.4em] lg:tracking-[0.5em]">
          Days till revolution
         </h1>
         <div className="w-32 h-px bg-gradient-to-r from-transparent via-white/50 to-transparent mx-auto mt-4"></div>

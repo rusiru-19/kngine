@@ -40,7 +40,11 @@ const competitions = [
 
 export default function CompetitionsSection() {
   return (
-    <section id="competition" className="h-180 flex flex-col items-center relative justify-center px-6 py-16 ">
+    <section
+      id="competition"
+      className="relative flex flex-col items-center justify-center px-4 sm:px-6 py-16 sm:py-20 lg:py-24"
+    >
+
     <div
                 className={cn(
                   "absolute inset-0",
@@ -51,10 +55,13 @@ export default function CompetitionsSection() {
               />
     <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_5%,white)] dark:bg-black"></div>
         
-       <h1 className="text-2xl  sm:text-3xl md:text-4xl lg:text-5xl text-white/90 tracking-[0.5em] font-thin text-center uppercase">
-         competitions
-        </h1>
-        <div className="w-32 h-px bg-gradient-to-r mb-15 from-transparent via-white/50 to-transparent mx-auto mt-4"></div>
+       <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl 
+               text-white/90 tracking-[0.3em] sm:tracking-[0.4em] lg:tracking-[0.5em]
+               font-thin text-center uppercase">
+        competitions
+      </h1>
+        <div className="w-24 sm:w-32 h-px bg-gradient-to-r from-transparent via-white/50 to-transparent mx-auto mt-4 mb-12"></div>
+
 
       <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
         {competitions.map((comp, i) => (

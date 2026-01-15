@@ -29,7 +29,10 @@ export default function HUDCard() {
   }, [index, fullText, isInView]);
 
   return (
-    <section id="about"  className="relative p-10 flex h-auto w-full items-center justify-center bg-black dark:bg-black">
+      <section
+        id="about"
+        className="relative px-4 py-10 sm:px-6 md:p-10 flex h-auto w-full items-center justify-center bg-black"
+      >
        <div
         className={cn(
           "absolute inset-0",
@@ -52,11 +55,12 @@ export default function HUDCard() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 p-8 md:p-12">
             {/* Logo */}
             <div className="col-span-1 md:col-span-2 flex items-center justify-center md:justify-start">
-              <div className="relative">
-               <PixelatedCanvas
+      <div className="relative w-full max-w-[260px] sm:max-w-[300px] md:max-w-[340px]">
+      <PixelatedCanvas
         src="/images/character4.webp"
         width={300}
         height={500}
+        className="w-full h-auto p-2 sm:p-4"
         cellSize={3}
         dotScale={0.9}
         backgroundColor="#000000"
@@ -71,7 +75,7 @@ export default function HUDCard() {
         sampleAverage
         tintColor="#FFFFFF"
         tintStrength={0.2}
-        className="p-4"
+    
       />
               
               </div>
