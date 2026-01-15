@@ -11,28 +11,32 @@ const competitions = [
   {
     id: 1,
     title: "Web Designing",
-    description: "Inrer School Web Designing Compettetion.",
+    description:
+      "An inter-school web designing competition where students showcase creativity, UI/UX skills, and  web technologies.",
     icon: <Code className="w-10 h-10 text-white" />,
     link: '/webdev'
   },
   {
     id: 2,
     title: "Graphic Design",
-    description: "Inrer School Graphic Designing Compettetion.",
+    description:
+      "An inter-school graphic design competition focused on visual creativity, branding, and digital design skills.",
     icon: <Paintbrush className="w-10 h-10 text-white" />,
     link: '/graphicdesign'
   },
   {
     id: 3,
     title: "Quiz Battle",
-    description: "Compete with peers in technology and general knowledge quizzes.",
+    description:
+      "A competitive quiz challenge testing knowledge in ICT, technology trends, and general knowledge.",
     icon: <Puzzle className="w-10 h-10 text-white" />,
     link: '/quiz'
   },
   {
     id: 4,
     title: "Cyber Combat",
-    description: "Pitch innovative ideas and solve real-world tech problems.",
+    description:
+      "A cybersecurity and problem-solving competition where students tackle real-world digital challenges.",
     icon: <Trophy className="w-10 h-10 text-white" />,
     link: '/cybercombat'
   },
