@@ -25,7 +25,7 @@ function CodeCom() {
       
       <Link href="/codecom">
         <div className="relative card1 p-10 flex flex-col items-center text-center hover:scale-105 hover:shadow-[0_0_20px_rgba(50,255,50,0.7)] transition-all">
-          <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 aquire">codecom</h3>
+          <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 ">codeCom</h3>
           <p className='text-gray-30 text-gray-300 text-sm sm:text-base0'>Every line of code is a weapon. Hack the challenge. Own the
                             leaderboard</p>
         </div>
@@ -33,7 +33,7 @@ function CodeCom() {
 
       <Link href="/webdev">
         <div className="relative card1 p-10 flex flex-col items-center text-center hover:scale-105 hover:shadow-[0_0_20px_rgba(50,255,50,0.7)] transition-all">
-          <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 aquire ">WebDevelopment</h3>
+          <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2  ">WebDevelopment</h3>
           <p className='text-gray-300 text-sm sm:text-base'>Build the digital resistance. Your website is the battleground</p>
         </div>
       </Link>

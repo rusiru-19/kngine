@@ -85,7 +85,7 @@ function CyberCombat() {
         <div className="relative max-w-5xl mx-auto px-4 py-32 text-white">
 
           {/* Title */}
-          <h1 className="text-6xl aquire mt-25 font-bold text-center tracking-wider mb-10">
+          <h1 className="text-6xl  mt-25 font-bold text-center tracking-wider mb-10">
             Cyber Combat
           </h1>
 

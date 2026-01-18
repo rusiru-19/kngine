@@ -33,11 +33,12 @@ export default function Footer() {
           <a href="#competition" className="hover:text-gray-400 transition-colors">
             Competitions
           </a>
-          <a href="#speakers" className="hover:text-gray-400 transition-colors">
-            Speakers
-          </a>
+       
           <a href="/contact" className="hover:text-gray-400 transition-colors">
             Contact
+          </a>
+          <a href="/register" className="hover:text-gray-400 transition-colors">
+            Register
           </a>
         </div>
 

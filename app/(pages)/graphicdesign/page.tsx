@@ -81,7 +81,7 @@ function GraphicDesigning() {
         <div className="relative max-w-5xl mx-auto px-4 py-32 text-white">
           
           {/* Title */}
-          <h1 className="text-6xl mt-25 font-bold tracking-wider aquire text-center mb-10">
+          <h1 className="text-6xl mt-25 font-bold tracking-wider  text-center mb-10">
             DesignerX
           </h1>
 
