@@ -10,15 +10,15 @@ import { link } from "fs";
 const competitions = [
   {
     id: 1,
-    title: "Web Designing",
+    title: "coding",
     description:
-      "An inter-school web designing competition where students showcase creativity, UI/UX skills, and  web technologies.",
+      "An inter-school web designing competition and coding where students showcase their coding skills.",
     icon: <Code className="w-10 h-10 text-white" />,
-    link: '/webdev'
+    link: '/coding'
   },
   {
     id: 2,
-    title: "Graphic Design",
+    title: "DesignerX",
     description:
       "An inter-school graphic design competition focused on visual creativity, branding, and digital design skills.",
     icon: <Paintbrush className="w-10 h-10 text-white" />,
@@ -26,7 +26,7 @@ const competitions = [
   },
   {
     id: 3,
-    title: "Quiz Battle",
+    title: "Intellect",
     description:
       "A competitive quiz challenge testing knowledge in ICT, technology trends, and general knowledge.",
     icon: <Puzzle className="w-10 h-10 text-white" />,
@@ -40,6 +40,7 @@ const competitions = [
     icon: <Trophy className="w-10 h-10 text-white" />,
     link: '/cybercombat'
   },
+  
 ];
 
 export default function CompetitionsSection() {

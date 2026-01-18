@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import{hackedfont} from './fonts'
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     title: "KNGINE | Richmond College ICT Day",
     description:
       "The official website of KNGINE, the annual ICT Day organized by Richmond College ICT Society (RITS).",
-    images: ["/images/imagebg.png"],
+    images: ["/og/main.png"],
     creator: "@RichmondCollege", // optional if available
   },
 
@@ -103,9 +103,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} ${hackedfont.variable} antialiased `}
       >
-        <div className="bg-[#030304]">{children}</div>
+        <div className="bg-[#030304] ">{children}</div>
         
       </body>
     </html>

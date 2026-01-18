@@ -46,6 +46,35 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
+@font-face {
+  font-family: "haackedfont";
+  src: url("../public/fonts/Hacked-KerX.ttf") format("tff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "amputa";
+  src: url("../public/fonts/Amputa Bangiz.ttf") format("tff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "aquire";
+  src: url("../public/fonts/AquireBold-8Ma60.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.hacked{
+  font-family: hackedfont;
+}
+.amputa{
+  font-family: amputaa;
+}
+.aquire{
+  font-family: aquire;
+}
 .card {
   width: auto;
   height: auto;
@@ -67,6 +96,18 @@
     0 0 6px rgba(255, 0, 242, 0.6),
     0 0 14px rgba(0, 255, 102, 0.3);;
   border-radius: 0em 4em 1em 4em;
+  corner-shape: round bevel round bevel;
+
+}
+.card2 {
+  width: auto;
+  height: auto;
+  border: 1px solid #ffffff;
+  background-color: #000000;
+  box-shadow: 
+    0 0 6px rgba(255, 0, 242, 0.6),
+    0 0 14px rgba(0, 255, 102, 0.3);;
+  border-radius: 0em 2em 1em 2em;
   corner-shape: round bevel round bevel;
 
 }
