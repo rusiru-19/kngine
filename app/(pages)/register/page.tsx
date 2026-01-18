@@ -36,36 +36,36 @@ function Registration() {
     <>
       {/* Structured Data for SEO */}
       <Script
-        id="kngine-registration-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Event",
-            name: "KNGINE’26 – Inter-School ICT Competitions",
-            description:
-              "KNGINE’26 is the annual inter-school ICT day organized by Richmond College ICT Society (RITS), featuring competitions like Intellect, Codecom, DesignerX, Web Development, and Cyber Combat.",
-            eventStatus: "https://schema.org/EventScheduled",
-            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-            location: {
-              "@type": "Place",
-              name: "C.W.W. Kannangara Multi-Purpose Auditorium, Richmond College",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Galle",
-                addressCountry: "LK",
-              },
-            },
-            organizer: {
-              "@type": "Organization",
-              name: "Richmond College ICT Society (RITS)",
-              url: "https://kngine.richmondcollege.lk",
-            },
-            isAccessibleForFree: true,
-            url: "https://example.com/registration",
-          }),
-        }}
-      />
+  id="intellect-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "EducationalEvent",
+      "name": "Intellect – Inter-School IT & Tech Quiz (KNGINE’26)",
+      "description": "An inter-school IT & Tech quiz competition organized under KNGINE’26 by the Richmond College ICT Society.",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "startDate": "2026-02-12T09:00:00+05:30", // <-- add start date/time
+      "endDate": "2026-02-12T17:00:00+05:30",   // <-- optional, recommended
+      "organizer": {
+        "@type": "Organization",
+        "name": "Richmond College ICT Society (RITS)",
+        "url": "https://kngine.richmondcollege.lk"
+      },
+      "isAccessibleForFree": true,
+      "url": "https://kngine.richmondcollege.lk/intellect",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://example.com/registration",
+        "availability": "https://schema.org/InStock",
+        "price": "0",
+        "priceCurrency": "LKR"
+      }
+    }),
+  }}
+/>
+
 
       <div className="bg-black min-h-screen relative">
         <Navigationbar />
