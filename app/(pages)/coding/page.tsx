@@ -31,7 +31,7 @@ function CodeCom() {
         </div>
       </Link>
 
-      <Link href="/ebdev">
+      <Link href="/webdev">
         <div className="relative card1 p-10 flex flex-col items-center text-center hover:scale-105 hover:shadow-[0_0_20px_rgba(50,255,50,0.7)] transition-all">
           <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 aquire ">WebDevelopment</h3>
           <p className='text-gray-300 text-sm sm:text-base'>Build the digital resistance. Your website is the battleground</p>
