@@ -45,7 +45,20 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
 }
+html {
+  scrollbar-width: none; /* Firefox */
+}
 
+body {
+  -ms-overflow-style: none; /* IE / Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+*{
+  cursor: none;
+}
 @font-face {
   font-family: "haackedfont";
   src: url("../public/fonts/Hacked-KerX.ttf") format("tff");

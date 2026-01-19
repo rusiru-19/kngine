@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import{hackedfont} from './fonts'
+import ScrollProgress from "@/components/scrollprogress";
+import CustomCursor from "@/components/customcursor";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -112,7 +114,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${hackedfont.variable} antialiased `}
       >
-        <div className="bg-[#030304] ">{children}</div>
+        <div className="bg-[#030304] ">
+          <ScrollProgress />
+          <CustomCursor />
+          {children}</div>
         
       </body>
     </html>

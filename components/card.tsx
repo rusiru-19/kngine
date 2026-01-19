@@ -107,6 +107,7 @@ export default function HUDCard() {
           </div>
         </div>
       </motion.div>
+      
     </section>
   );
 }

@@ -7,7 +7,8 @@ import CountdownTimer from '@/components/countdown'
 import Footer from '@/components/footer';
 import { cn } from "@/lib/utils";
 import Script from "next/script";
-
+import SmoothScroll from "@/components/scrollsmooth"
+import Reveal from '@/components/reveals';
 export default function Home() {
   return (
     <div>
@@ -47,13 +48,28 @@ export default function Home() {
           }),
         }}
       />
-      {/* <Preloader /> */}
       <Navigationbar />
-      <Hero />
-      <CompetitionsSection />
-      <CountdownTimer />
-      <Card />
-      <Footer />
+  <Reveal>
+    <Hero />
+  </Reveal>
+
+  <Reveal delay={0.1}>
+    <CompetitionsSection />
+  </Reveal>
+
+  <Reveal delay={0.2}>
+    <CountdownTimer />
+  </Reveal>
+
+  <Reveal>
+    <Card />
+  </Reveal>
+
+  <Reveal>
+    <Footer />
+  </Reveal>
+
+
     </div>
   );
 }
